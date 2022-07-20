@@ -3,6 +3,7 @@ package net.leems.shruman;
 import net.fabricmc.api.ModInitializer;
 import net.leems.shruman.block.ModBlocks;
 import net.leems.shruman.item.ModItems;
+import net.leems.shruman.util.ModRegistries;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,6 +17,7 @@ public class Shruman implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModRegistries.registerModStuffs();
 
 	}
 }

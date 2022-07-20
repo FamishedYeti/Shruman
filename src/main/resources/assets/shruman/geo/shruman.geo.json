@@ -1,0 +1,87 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "Shroomling",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "h_head",
+					"parent": "Shroomling",
+					"pivot": [0, 18.75, 0],
+					"cubes": [
+						{"origin": [-5, 18, -4], "size": [10, 7, 8], "uv": [36, 55]}
+					]
+				},
+				{
+					"name": "h_mushroom",
+					"parent": "h_head",
+					"pivot": [0, 28.75, 0],
+					"rotation": [-10, 0, 0],
+					"cubes": [
+						{"origin": [-6, 28.3, -4], "size": [12, 2, 10], "uv": [84, 0]},
+						{"origin": [-7, 23.3, -5], "size": [14, 5, 12], "uv": [3, 2]}
+					]
+				},
+				{
+					"name": "body",
+					"parent": "Shroomling",
+					"pivot": [0, 13, 0]
+				},
+				{
+					"name": "torso",
+					"parent": "body",
+					"pivot": [0, 13, 0],
+					"cubes": [
+						{"origin": [-7, 3, -6], "size": [14, 10, 12], "uv": [0, 23]},
+						{"origin": [-6, 13, -5], "size": [12, 5, 10], "uv": [0, 45]}
+					]
+				},
+				{
+					"name": "right_arm",
+					"parent": "body",
+					"pivot": [-6, 16, 0],
+					"rotation": [0, 0, -60],
+					"cubes": [
+						{"origin": [-13.13397, 15.5, -1], "size": [8, 2, 2], "uv": [40, 27]}
+					]
+				},
+				{
+					"name": "left_arm",
+					"parent": "body",
+					"pivot": [6, 16, 0],
+					"rotation": [0, 0, 60],
+					"cubes": [
+						{"origin": [5.13397, 15.5, -1], "size": [8, 2, 2], "uv": [40, 23]}
+					]
+				},
+				{
+					"name": "right_leg",
+					"parent": "body",
+					"pivot": [-4, 3, 0],
+					"cubes": [
+						{"origin": [-5, 0, -2], "size": [3, 3, 4], "uv": [0, 7]}
+					]
+				},
+				{
+					"name": "left_leg",
+					"parent": "body",
+					"pivot": [4, 3, 0],
+					"cubes": [
+						{"origin": [2, 0, -2], "size": [3, 3, 4], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}
