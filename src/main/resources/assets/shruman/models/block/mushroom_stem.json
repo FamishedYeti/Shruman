@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "shruman:block/mushroom_top",
+    "side": "shruman:block/mushroom_stem"
+  }
+}
