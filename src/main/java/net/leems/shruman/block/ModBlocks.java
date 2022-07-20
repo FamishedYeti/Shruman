@@ -3,8 +3,6 @@ package net.leems.shruman.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.leems.shruman.Shruman;
-import net.leems.shruman.item.ModItemGroup;
-import net.leems.shruman.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
@@ -17,9 +15,9 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
     public static final Block MUSHROOM_STEM = registerBlock("mushroom_stem",
-        new PillarBlock(FabricBlockSettings.copy(Blocks.MUSHROOM_STEM).strength(2f)), ModItemGroup.SHROOMS);
+        new PillarBlock(FabricBlockSettings.of(Material.WOOL).strength(4f)), ItemGroup.BUILDING_BLOCKS);
     public static final Block STRIPPED_MUSHROOM_STEM = registerBlock("stripped_mushroom_stem",
-            new PillarBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC).strength(2f)), ModItemGroup.SHROOMS);
+            new PillarBlock(FabricBlockSettings.of(Material.WOOL).strength(4f)), ItemGroup.BUILDING_BLOCKS);
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlock(name, block, tab);
